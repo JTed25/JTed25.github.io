@@ -5,6 +5,8 @@ header {
 }
 p {
     color: black;
+    top: 0px;
+    left: 0px;
 }
 
 body {
@@ -13,16 +15,13 @@ body {
     text-align: center;
 }
 
-box {
-    width: 300px;
-    height: 200px;
-    margin: 20px;
-    padding: 10px;
-    border: 1px solid black;
+.container {
+    display: flex;
+    justify-content: space-between;
 }
 
 .card {
-    background-color: rgb(224, 80, 80);
+    background-color: rgb(239, 154, 154);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 5px;
     padding: 20px;
@@ -30,7 +29,7 @@ box {
     }
 
 img {
-    postion: relative;
+    position: relative;
     float: right;
 }
 
