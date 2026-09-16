@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conway's Game of Life</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Conway's Game of Life</h1>
+        <p>Conway's Game of Life is een cellulair automaat dat ik heb gemaakt met behulp van Java. 
+            Het is een eenvoudig spel dat laat zien hoe complexe patronen kunnen ontstaan uit eenvoudige regels.</p>
+    </header>
+
+    <main>
+        <div class="game-container">
+            <canvas id="gameCanvas" width="600" height="400"></canvas>
+            <div class="controls">
+                <button id="startButton">Start</button>
+                <button id="stopButton">Stop</button>
+                <button id="resetButton">Reset</button>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <nav>
+            <ul>
+                <p>Hier kun je terug naar de homepagina:</p>
+                <button><a href="index.html">Home</a></button>
+            </ul>
+        </nav>
+
+        <p>@2026 Juan. Alle rechten voorbehouden.</p>
+    </footer>
+
+    <script src="conways-game-of-life.js"></script>
