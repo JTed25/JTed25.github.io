@@ -15,3 +15,5 @@ const projecten = [
         beschrijving: "Een cellulaire automaat die de evolutie van cellen simuleert."
     }
 ];
+
+projecten.sort((a, b) => a.naam.localeCompare(b.naam));
