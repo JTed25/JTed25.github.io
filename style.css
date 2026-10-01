@@ -34,7 +34,13 @@ p {
     max-width: 100%;
     box-sizing: border-box;
     }
-    
+
+.card img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
 .card a {
     display: block;
     margin-top: 10px;
