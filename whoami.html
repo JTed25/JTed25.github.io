@@ -37,9 +37,34 @@
                 <img src="Mario%20en%20ik.jpg" alt="Juan en Mario">
             </div>
         </section>
+
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>Stuur een bericht om contact te maken met mij.</p>
+            <form id="contact-form">
+                <div>
+                    <label for="naam">Naam:</label>
+                    <input type="text" id="naam" name="naam">
+                </div>
+                <div>
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email">
+                </div>
+                <div>
+                    <label for="bericht">Bericht:</label>
+                    <textarea id="bericht" name="bericht"></textarea>
+                </div>
+
+                <button type="submit">Verzenden</button>
+
+                <p id="feedback" aria-live="polite"></p>
+            </form>
+        </section>
     </main>
     <footer>
     <p>&copy; 2026 Juan. Alle rechten voorbehouden.</p>
 </footer>
+
+<script src="contacts.js"></script>
 </body>
 </html>
