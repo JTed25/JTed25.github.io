@@ -22,8 +22,6 @@ const blogs = [
     }
 ];
 
-blogs.sort((a,b) => a.titel.localeCompare(b.titel));
-
 function renderBlogs() {
     const constrainer = document.getElementById("blog-container");
 
@@ -66,5 +64,23 @@ function renderBlogs() {
         constrainer.appendChild(card);
     });
 }
+
+const sorteerKnop = document.getElementById("sorteer-blogs");
+
+let nieuwsteEerst = true;
+
+sorteerKnop.addEventListener("click", () => {
+    if (nieuwsteEerst) {
+        blogs.sort((a, b) => new Date(b.startdatum) - new Date(a.startdatum));
+        sorteerKnop.textContent = "Oudste eerst";
+    }
+    else {
+        blogs.sort((a, b) => new Date(a.startdatum) - new Date(b.startdatum));
+        sorteerKnop.textContent = "Nieuwste eerst";
+    }
+
+    nieuwsteEerst = !nieuwsteEerst;
+    renderBlogs();
+});
 
 renderBlogs();
