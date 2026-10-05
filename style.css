@@ -32,6 +32,8 @@ p {
     margin: 20px;
     width: 300px;
     max-width: 100%;
+    display: flex;
+    flex-direction: column;
     box-sizing: border-box;
     }
 
@@ -45,6 +47,17 @@ p {
     display: block;
     margin-top: 10px;
 }
+
+.card p {
+    text-align: left;
+}
+
+.card p:first-of-type {
+    color: lightcyan;
+    font-family:'Times New Roman', Times, serif;
+    font-weight: normal;
+}
+
 nav {
     background-color: #d676e2;
     padding: 10px;
@@ -139,6 +152,35 @@ footer {
     height: 120px;
     resize: vertical;
     box-sizing: border-box;
+}
+
+#ghibli-section {
+    background-color: white;
+    width: 800px;
+    max-width: 90%;
+    margin: 30px auto;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+#ghibli-section h2 {
+    margin-top: 0;
+}
+
+#ghibli-section h3 {
+    color: #4a148c;
+}
+
+#ghibli-container p {
+    text-align: left;
+    line-height: 1.6;
+}
+
+#ghibli-container img {
+    width: 300px;
+    max-width: 100%;
+    border-radius: 10px;
 }
 
 @media screen and (max-width: 768px) {
