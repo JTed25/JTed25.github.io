@@ -27,14 +27,22 @@
             <button id="nieuwe-film">Nieuwe film</button>
             <section id="ghibli-section">
                 <h2>Studio Ghibli Film</h2>
-                <p id="ghibli-status"> Film laden...</p>
+                <img
+                    id="ghibli-image"
+                    loading="lazy"
+                    width="300"
+                    height="400"
+                    alt="Studio Ghibli film">
+
+                <p id="ghibli-status">Film laden...</p>
+
                 <div id="ghibli-container"></div>
             </section>
         </main>
     <footer>
         <p>&copy; 2026 Juan. Alle rechten voorbehouden.</p>
     </footer>
-    <script src="api.js"></script>
+    <script src="api.js" defer></script>
 </body>
 </html>
 

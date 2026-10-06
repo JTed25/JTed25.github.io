@@ -1,5 +1,6 @@
 const status = document.getElementById("ghibli-status");
 const container = document.getElementById("ghibli-container");
+const image = document.getElementById("ghibli-image");
 const url = "https://ghibliapi.vercel.app/films"
 
 function laadGhibliFilm() {
@@ -25,11 +26,9 @@ function laadGhibliFilm() {
             const jaar = document.createElement("p");
             jaar.textContent = `Uitgebracht: ${film.release_date}`;
 
-            const afbeelding = document.createElement("img");
-            afbeelding.src = film.image;
-            afbeelding.alt = film.title;
+            image.src = film.image;
+            image.alt = film.title;
 
-            container.appendChild(afbeelding);
             container.appendChild(titel);
             container.appendChild(regisseur);
             container.appendChild(jaar);
