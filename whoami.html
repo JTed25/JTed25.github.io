@@ -27,11 +27,14 @@
             <div class="text">
             <h2>Over mij</h2>
             <p>Mijn naam is Juan Tedjaatmadja. Ik ben een tweedejaarsstudent op de Haagse Hogeschool.</p>
-            <p>Mijn hobby's zijn gamen, films en series bekijken en manga lezen.</p>
+            <p>Mijn hobby's zijn gamen, films en series bekijken en manga lezen. Verder bekijk ik ook anime. Mijn favoriete anime is Boku no Hero Academia/My Hero Academia.</p>
+            <p>Ik speel veel games zoals Super Mario, Pokémon, Sonic etc. Mijn favoriete game is Super Smash Bros Ultimate, omdat je met zoveel karakters kunt vechten.</p>
             <p>Ik woon in Zoetermeer. <time datetime="2004-08-25">Ik ben geboren op 25 augustus 2004.</time></p>
             <p>Mijn favoriete eten is pizza🍕. Verder is mijn favoriete kleur rood.</p>
-            <p>Ik ben een Christen. Elke zondag ga ik naar de kerk.</p>
-            <p>Ik heb deze studie gekozen omdat ik geïnteresseerd ben in gamen en programmeren.</p></div>
+            <p>Ik ben een Christen sinds jeugd. Elke zondag ga ik naar de kerk. Naast de kerk doe ik ook aan bijbelstudie.
+                Elke woensdagavond ga ik bij iemands huis komen om de les van vorige preek in te verdiepen met andere jongens.</p>
+            <p>Ik heb de opleiding HBO-ICT gekozen omdat ik geïnteresseerd ben in gamen en programmeren. Een andere reden is omdat deze opleiding vlakbij mijn huis ligt. 
+                Aan het eind van semester 1 moest ik kiezen tussen een aantal specialisaties. Ik heb uiteindelijk gekozen voor Software Engineering, omdat ik gamen leuk vind en programmeren interessant vind.</p></div>
 
             <div class="image">
                 <img src="Mario%20en%20ik.jpg" alt="Juan en Mario">
@@ -40,19 +43,22 @@
 
         <section id="contact">
             <h2>Contact</h2>
-            <p>Stuur een bericht om contact te maken met mij.</p>
-            <form id="contact-form">
+            <p>Stuur een bericht om contact met mij te maken.</p>
+            <form id="contact-form" novalidate>
                 <div>
                     <label for="naam">Naam:</label>
                     <input type="text" id="naam" name="naam">
+                    <span id="naam-fout" aria-live="polite"></span>
                 </div>
                 <div>
                     <label for="email">E-mail:</label>
                     <input type="email" id="email" name="email">
+                    <span id="email-fout" aria-live="polite"></span>
                 </div>
                 <div>
                     <label for="bericht">Bericht:</label>
                     <textarea id="bericht" name="bericht"></textarea>
+                    <span id="bericht-fout" aria-live="polite"></span>
                 </div>
 
                 <button type="submit">Verzenden</button>

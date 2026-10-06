@@ -8,27 +8,39 @@ formulier.addEventListener("submit", (event) => {
     const email = document.getElementById("email").value.trim();
     const bericht = document.getElementById("bericht").value.trim();
 
+    document.getElementById("naam-fout").textContent = "";
+    document.getElementById("email-fout").textContent = "";
+    document.getElementById("bericht-fout").textContent = "";
+    feedback.textContent = "";
+
+    let geldig = true;
+
     if (naam === "") {
-        feedback.style.color = "red";
-        feedback.textContent = "Vul uw naam in";
-        return;
+        document.getElementById("naam-fout").textContent = "Vul uw naam in.";
+        geldig = false;
     }
 
     if (email === "") {
-        feedback.style.color = "red";
-        feedback.textContent = "Vul uw e-mailadres in";
-        return;
+        document.getElementById("email-fout").textContent = "Vul uw e-mailadres in.";
+        geldig = false;
     }
 
-    if (!email.includes("@")) {
-        feedback.style.color = "red";
-        feedback.textContent = "Voer een geldige e-mailadres in";
-        return;
+    else if (!email.includes("@")) {
+        document.getElementById("email-fout").textContent = "Voer een geldige e-mailadres in.";
+        geldig = false;
     }
 
     if (bericht === "") {
-        feedback.style.color = "red";
-        feedback.textContent = "Vul een bericht in";
+        document.getElementById("bericht-fout").textContent = "Vul een bericht in.";
+        geldig = false;
+    }
+
+    else if (bericht.length < 10) {
+        document.getElementById("bericht-fout").textContent = "Bericht moet minimaal 10 tekens bevatten.";
+        geldig = false;
+    }
+
+    if (!geldig) {
         return;
     }
 
@@ -36,4 +48,4 @@ formulier.addEventListener("submit", (event) => {
     feedback.textContent = "Bericht succesvol verzonden!";
 
     formulier.reset();
-})
+});

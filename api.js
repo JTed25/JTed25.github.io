@@ -2,38 +2,47 @@ const status = document.getElementById("ghibli-status");
 const container = document.getElementById("ghibli-container");
 const url = "https://ghibliapi.vercel.app/films"
 
-fetch(url)
-    .then(response => response.json())
-    .then(data => {
-        status.textContent = "";
+function laadGhibliFilm() {
+    container.innerHTML = "";
 
-        const randomIndex = Math.floor(Math.random() * data.length);
-        const film = data[randomIndex];
+    fetch(url)
+        .then(response => response.json())
+        .then(data => {
+            status.textContent = "";
 
-        const titel = document.createElement("h3");
-        titel.textContent = film.title;
+            const randomIndex = Math.floor(Math.random() * data.length);
+            const film = data[randomIndex];
 
-        const beschrijving = document.createElement("p");
-        beschrijving.textContent = film.description;
+            const titel = document.createElement("h3");
+            titel.textContent = film.title;
 
-        const regisseur = document.createElement("p");
-        regisseur.textContent = `Regisseur: ${film.director}`;
+            const beschrijving = document.createElement("p");
+            beschrijving.textContent = film.description;
 
-        const jaar = document.createElement("p");
-        jaar.textContent = `Uitgebracht: ${film.release_date}`;
+            const regisseur = document.createElement("p");
+            regisseur.textContent = `Regisseur: ${film.director}`;
 
-        const afbeelding = document.createElement("img");
-        afbeelding.src = film.image;
-        afbeelding.alt = film.title;
+            const jaar = document.createElement("p");
+            jaar.textContent = `Uitgebracht: ${film.release_date}`;
 
-        container.appendChild(afbeelding);
-        container.appendChild(titel);
-        container.appendChild(regisseur);
-        container.appendChild(jaar);
-        container.appendChild(beschrijving);
-})
-.catch(error => {
-    status.textContent = "Informatie over de Studio Ghibli film kon niet worden geladen.";
+            const afbeelding = document.createElement("img");
+            afbeelding.src = film.image;
+            afbeelding.alt = film.title;
 
-    console.log(error);
-});
+            container.appendChild(afbeelding);
+            container.appendChild(titel);
+            container.appendChild(regisseur);
+            container.appendChild(jaar);
+            container.appendChild(beschrijving);
+        })
+        .catch(error => {
+            status.textContent = "Informatie over de Studio Ghibli film kon niet worden geladen.";
+
+            console.log(error);
+        });
+}
+
+laadGhibliFilm();
+
+document.getElementById("nieuwe-film")
+    .addEventListener("click", laadGhibliFilm);
