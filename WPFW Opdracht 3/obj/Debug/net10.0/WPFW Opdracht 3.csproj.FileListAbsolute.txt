@@ -1,0 +1,37 @@
+C:\Users\Jeted\OneDrive\WPFW opdracht 1\WPFW Opdracht 3\obj\Debug\net10.0\WPFW Opdracht 3.csproj.AssemblyReference.cache
+C:\Users\Jeted\OneDrive\WPFW opdracht 1\WPFW Opdracht 3\obj\Debug\net10.0\rpswa.dswa.cache.json
+C:\Users\Jeted\OneDrive\WPFW opdracht 1\WPFW Opdracht 3\obj\Debug\net10.0\WPFW Opdracht 3.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Jeted\OneDrive\WPFW opdracht 1\WPFW Opdracht 3\obj\Debug\net10.0\WPFW Opdracht 3.AssemblyInfoInputs.cache
+C:\Users\Jeted\OneDrive\WPFW opdracht 1\WPFW Opdracht 3\obj\Debug\net10.0\WPFW Opdracht 3.AssemblyInfo.cs
+C:\Users\Jeted\OneDrive\WPFW opdracht 1\WPFW Opdracht 3\obj\Debug\net10.0\WPFW Opdracht 3.csproj.CoreCompileInputs.cache
+C:\Users\Jeted\OneDrive\WPFW opdracht 1\WPFW Opdracht 3\obj\Debug\net10.0\WPFW Opdracht 3.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\Jeted\OneDrive\WPFW opdracht 1\WPFW Opdracht 3\obj\Debug\net10.0\WPFW Opdracht 3.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Jeted\OneDrive\WPFW opdracht 1\WPFW Opdracht 3\obj\Debug\net10.0\WPFW Opdracht 3.sourcelink.json
+C:\Users\Jeted\OneDrive\WPFW opdracht 1\WPFW Opdracht 3\bin\Debug\net10.0\appsettings.Development.json
+C:\Users\Jeted\OneDrive\WPFW opdracht 1\WPFW Opdracht 3\bin\Debug\net10.0\appsettings.json
+C:\Users\Jeted\OneDrive\WPFW opdracht 1\WPFW Opdracht 3\bin\Debug\net10.0\WPFW Opdracht 3.staticwebassets.endpoints.json
+C:\Users\Jeted\OneDrive\WPFW opdracht 1\WPFW Opdracht 3\bin\Debug\net10.0\WPFW Opdracht 3.exe
+C:\Users\Jeted\OneDrive\WPFW opdracht 1\WPFW Opdracht 3\bin\Debug\net10.0\WPFW Opdracht 3.deps.json
+C:\Users\Jeted\OneDrive\WPFW opdracht 1\WPFW Opdracht 3\bin\Debug\net10.0\WPFW Opdracht 3.runtimeconfig.json
+C:\Users\Jeted\OneDrive\WPFW opdracht 1\WPFW Opdracht 3\bin\Debug\net10.0\WPFW Opdracht 3.dll
+C:\Users\Jeted\OneDrive\WPFW opdracht 1\WPFW Opdracht 3\bin\Debug\net10.0\WPFW Opdracht 3.pdb
+C:\Users\Jeted\OneDrive\WPFW opdracht 1\WPFW Opdracht 3\bin\Debug\net10.0\Microsoft.AspNetCore.OpenApi.dll
+C:\Users\Jeted\OneDrive\WPFW opdracht 1\WPFW Opdracht 3\bin\Debug\net10.0\Microsoft.OpenApi.dll
+C:\Users\Jeted\OneDrive\WPFW opdracht 1\WPFW Opdracht 3\bin\Debug\net10.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\Jeted\OneDrive\WPFW opdracht 1\WPFW Opdracht 3\bin\Debug\net10.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\Jeted\OneDrive\WPFW opdracht 1\WPFW Opdracht 3\bin\Debug\net10.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\Jeted\OneDrive\WPFW opdracht 1\WPFW Opdracht 3\obj\Debug\net10.0\rjimswa.dswa.cache.json
+C:\Users\Jeted\OneDrive\WPFW opdracht 1\WPFW Opdracht 3\obj\Debug\net10.0\rjsmrazor.dswa.cache.json
+C:\Users\Jeted\OneDrive\WPFW opdracht 1\WPFW Opdracht 3\obj\Debug\net10.0\rjsmcshtml.dswa.cache.json
+C:\Users\Jeted\OneDrive\WPFW opdracht 1\WPFW Opdracht 3\obj\Debug\net10.0\scopedcss\bundle\WPFW Opdracht 3.styles.css
+C:\Users\Jeted\OneDrive\WPFW opdracht 1\WPFW Opdracht 3\obj\Debug\net10.0\staticwebassets.build.json
+C:\Users\Jeted\OneDrive\WPFW opdracht 1\WPFW Opdracht 3\obj\Debug\net10.0\staticwebassets.build.json.cache
+C:\Users\Jeted\OneDrive\WPFW opdracht 1\WPFW Opdracht 3\obj\Debug\net10.0\staticwebassets.development.json
+C:\Users\Jeted\OneDrive\WPFW opdracht 1\WPFW Opdracht 3\obj\Debug\net10.0\staticwebassets.build.endpoints.json
+C:\Users\Jeted\OneDrive\WPFW opdracht 1\WPFW Opdracht 3\obj\Debug\net10.0\swae.build.ex.cache
+C:\Users\Jeted\OneDrive\WPFW opdracht 1\WPFW Opdracht 3\obj\Debug\net10.0\WPFW Opd.B6B3B20F.Up2Date
+C:\Users\Jeted\OneDrive\WPFW opdracht 1\WPFW Opdracht 3\obj\Debug\net10.0\WPFW Opdracht 3.dll
+C:\Users\Jeted\OneDrive\WPFW opdracht 1\WPFW Opdracht 3\obj\Debug\net10.0\refint\WPFW Opdracht 3.dll
+C:\Users\Jeted\OneDrive\WPFW opdracht 1\WPFW Opdracht 3\obj\Debug\net10.0\WPFW Opdracht 3.pdb
+C:\Users\Jeted\OneDrive\WPFW opdracht 1\WPFW Opdracht 3\obj\Debug\net10.0\WPFW Opdracht 3.genruntimeconfig.cache
+C:\Users\Jeted\OneDrive\WPFW opdracht 1\WPFW Opdracht 3\obj\Debug\net10.0\ref\WPFW Opdracht 3.dll
