@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("WPFW Opdracht 3")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b18821c9e49d1e6572d9bbb0baf6b025ec973f86")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5d50896ef7b5dba69a9102c5fdb99b9907461416")]
 [assembly: System.Reflection.AssemblyProductAttribute("WPFW Opdracht 3")]
 [assembly: System.Reflection.AssemblyTitleAttribute("WPFW Opdracht 3")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
