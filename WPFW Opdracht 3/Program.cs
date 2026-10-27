@@ -1,5 +1,7 @@
 using Microsoft.EntityFrameworkCore;
 using WPFW_Opdracht_3.Data;
+using WPFW_Opdracht_3.Entities;
+using WPFW_Opdracht_3.DTOs;
 
 var builder = WebApplication.CreateBuilder(args);
 
