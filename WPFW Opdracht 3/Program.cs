@@ -1,12 +1,21 @@
+using Microsoft.EntityFrameworkCore;
+using WPFW_Opdracht_3.Data;
+
 var builder = WebApplication.CreateBuilder(args);
 
+builder.Services.AddDbContext<PortfolioDbContext>(options => options.UseSqlServer(
+    builder.Configuration.GetConnectionString("PortfolioDb")));
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 var app = builder.Build();
 
-app.UseSwagger();
-app.UseSwaggerUI();
+if (app.Environment.IsDevelopment())
+{
+    app.UseSwagger();
+    app.UseSwaggerUI();
+
+}
 
 app.MapGet("/", () =>
 {
