@@ -167,3 +167,5 @@ C:\Users\Jeted\OneDrive\WPFW opdracht 1\WPFW Opdracht 3\bin\Debug\net10.0\runtim
 C:\Users\Jeted\OneDrive\WPFW opdracht 1\WPFW Opdracht 3\bin\Debug\net10.0\runtimes\win-arm64\native\msalruntime_arm64.dll
 C:\Users\Jeted\OneDrive\WPFW opdracht 1\WPFW Opdracht 3\bin\Debug\net10.0\runtimes\win-x64\native\msalruntime.dll
 C:\Users\Jeted\OneDrive\WPFW opdracht 1\WPFW Opdracht 3\bin\Debug\net10.0\runtimes\win-x86\native\msalruntime_x86.dll
+C:\Users\Jeted\OneDrive\WPFW opdracht 1\WPFW Opdracht 3\bin\Debug\net10.0\System.Security.Cryptography.Pkcs.dll
+C:\Users\Jeted\OneDrive\WPFW opdracht 1\WPFW Opdracht 3\bin\Debug\net10.0\runtimes\win\lib\net10.0\System.Security.Cryptography.Pkcs.dll
