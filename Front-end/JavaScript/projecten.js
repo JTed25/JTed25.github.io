@@ -22,13 +22,13 @@ const projecten = [
         id: 2,
         naam: "Vang de volger",
         beschrijving: "Een spel waarbij je de volger probeert te vangen.",
-        afbeelding: "Vang_de_volger.png"
+        afbeelding: "../Images/Vang_de_volger.png"
     },
     {
         id: 3,
         naam: "Conway's Game of Life",
         beschrijving: "Een cellulaire automaat die de evolutie van cellen simuleert.",
-        afbeelding: "Conway's_game_of_life.png"
+        afbeelding: "../Images/Conway's_game_of_life.png"
     }
 ];
 
