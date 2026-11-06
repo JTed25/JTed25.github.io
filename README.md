@@ -1,6 +1,5 @@
 Naam: Juan Tedjaatmadja
 Studentennummer: 24025461
-Repository link: https://github.com/JTed25/JTed25.github.io
 
 Gekozen API-stijl:
 Ik heb voor Minimal API gekozen, omdat het minder complex is en het vereenvoudigt de API-ontwikkeling. Verder gebruik je minder data types dan wanneer je controllers gebruikt.
@@ -26,6 +25,12 @@ WPFW Opdracht 3
 -> Entities
 --> Project.cs
 --> Blogpost.cs
+
+-> Features
+--> Blogposts
+---> BlogpostEndpoints.cs
+--> Projects
+---> ProjectEndpoints.cs
 
 -> Migrations
 
