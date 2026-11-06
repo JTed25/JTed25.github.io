@@ -130,6 +130,13 @@ footer {
     cursor: pointer;
 }
 
+#filter-blogs {
+    margin-top: 20px;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
 #feedback {
     margin-top: 10px;
     font-weight: bold;

@@ -1,6 +1,7 @@
 const blogs = [
     {
         titel: "Zuid-Korea vakantie🛫",
+        categorie: "Vakantie",
         startdatum: "2026-07-29",
         einddatum: "2026-08-10",
         afbeelding: "../Images/Zuid_Korea.jpg",
@@ -8,6 +9,7 @@ const blogs = [
     },
     {
         titel: "Collectorsland🎴🎮",
+        categorie: "Evenement",
         startdatum: "2026-08-29",
         einddatum: "2026-08-29",
         afbeelding: "../Images/Collectorsland_2.0.jpg",
@@ -15,6 +17,7 @@ const blogs = [
     },
     {
         titel: "Eerste dag op school🏫",
+        categorie: "School",
         startdatum: "2026-08-31",
         einddatum: "2026-08-31",
         afbeelding: "../Images/De_Haagse_hogeschool.jpg",
@@ -22,12 +25,20 @@ const blogs = [
     }
 ];
 
-function renderBlogs() {
+function renderBlogs(filter = "Alles") {
     const constrainer = document.getElementById("blog-container");
 
     constrainer.innerHTML = "";
 
-    blogs.forEach(blog => {
+    let gefilterdeBlogs = blogs;
+
+    if (filter !== "Alles") {
+        gefilterdeBlogs = blogs.filter(
+            blog => blog.categorie === filter
+        );
+    }
+
+    gefilterdeBlogs.forEach(blog => {
         const card = document.createElement("div");
         card.classList.add("card");
 
@@ -65,22 +76,10 @@ function renderBlogs() {
     });
 }
 
-const sorteerKnop = document.getElementById("sorteer-blogs");
+const filterBlogs = document.getElementById("filter-blogs");
 
-let nieuwsteEerst = true;
-
-sorteerKnop.addEventListener("click", () => {
-    if (nieuwsteEerst) {
-        blogs.sort((a, b) => new Date(b.startdatum) - new Date(a.startdatum));
-        sorteerKnop.textContent = "Oudste eerst";
-    }
-    else {
-        blogs.sort((a, b) => new Date(a.startdatum) - new Date(b.startdatum));
-        sorteerKnop.textContent = "Nieuwste eerst";
-    }
-
-    nieuwsteEerst = !nieuwsteEerst;
-    renderBlogs();
+filterBlogs.addEventListener("change", () => {
+    renderBlogs(filterBlogs.value);
 });
 
 renderBlogs();
