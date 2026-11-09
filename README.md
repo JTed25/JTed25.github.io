@@ -1,4 +1,4 @@
-Mijn website: hhtps://jted25.github.io/front-end/html
+Mijn website: https://jted25.github.io/Front-end/HTML/
 
 Gekozen API-stijl:
 Ik heb voor Minimal API gekozen, omdat het minder complex is en het vereenvoudigt de API-ontwikkeling. Verder gebruik je minder data types dan wanneer je controllers gebruikt.
