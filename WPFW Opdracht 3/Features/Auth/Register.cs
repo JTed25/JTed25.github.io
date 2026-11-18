@@ -1,5 +1,4 @@
 using Microsoft.AspNetCore.Identity;
-using Microsoft.EntityFrameworkCore.Migrations.Operations;
 using WPFW_Opdracht_3.DTOs;
 
 namespace WPFW_Opdracht_3.Features.Auth;
