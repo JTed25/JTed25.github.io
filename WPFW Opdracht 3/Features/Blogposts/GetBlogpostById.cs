@@ -1,0 +1,31 @@
+using Microsoft.EntityFrameworkCore;
+using WPFW_Opdracht_3.Data;
+using WPFW_Opdracht_3.DTOs;
+
+namespace WPFW_Opdracht_3.Features.Blogposts;
+
+public static class GetBlogpostById
+{
+    public static RouteGroupBuilder MapGetBlogpostById(
+        this RouteGroupBuilder group)
+    {
+        /*GET blogpost op id*/
+        group.MapGet("/{id}", async (int id, PortfolioDbContext db) =>
+        {
+            var blogpost = await db.Blogposts.FindAsync(id);
+            
+            if (blogpost == null)
+                return Results.NotFound();
+
+            return Results.Ok(new BlogpostDto
+                {
+                    Id = blogpost.Id,
+                    Titel = blogpost.Titel,
+                    Inhoud = blogpost.Inhoud,
+                    Publicatiedatum = blogpost.Publicatiedatum
+                });
+            });
+        
+        return group;
+    }
+}

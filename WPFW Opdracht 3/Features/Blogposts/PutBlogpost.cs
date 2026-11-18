@@ -1,0 +1,30 @@
+using Microsoft.EntityFrameworkCore;
+using WPFW_Opdracht_3.Data;
+using WPFW_Opdracht_3.DTOs;
+
+namespace WPFW_Opdracht_3.Features.Blogposts;
+
+public static class PutBlogpost
+{
+    public static RouteGroupBuilder MapPutBlogpost(
+        this RouteGroupBuilder group)
+    {
+        /*PUT blogpost*/
+        group.MapPut("/{id}", async (int id, CreateBlogpostDto dto, PortfolioDbContext db) =>
+        {
+            var blogpost = await db.Blogposts.FindAsync(id);
+            
+            if (blogpost == null)
+                return Results.NotFound();
+
+            blogpost.Titel = dto.Titel;
+            blogpost.Inhoud = dto.Inhoud;
+            
+            await db.SaveChangesAsync();
+
+            return Results.Ok();
+        });
+
+        return group;
+    }
+}
