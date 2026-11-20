@@ -15,7 +15,15 @@ builder.Services
 .AddIdentity<IdentityUser, IdentityRole>()
 .AddEntityFrameworkStores<PortfolioDbContext>();
 builder.Services.AddAuthentication();
-builder.Services.AddAuthorization();
+
+builder.Services.AddAuthorization(options =>
+{
+    options.AddPolicy("EditorOrAdmin", policy =>
+    {
+        policy.RequireRole("Editor", "Admin");
+    });
+});
+
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 

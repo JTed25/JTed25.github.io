@@ -8,5 +8,6 @@ public static class AuthEndpoints
         var group = app.MapGroup("/api/auth");
 
         group.MapRegister();
+        group.MapLogin();
     }
 }

@@ -13,8 +13,8 @@ public static class BlogpostEndpoints
 
         group.MapGetAllBlogposts();
         group.MapGetBlogpostById();
-        group.MapPostBlogpost();
-        group.MapPutBlogpost();
-        group.MapDeleteBlogpost();
+        group.MapPostBlogpost().RequireAuthorization("EditorOrAdmin");
+        group.MapPutBlogpost().RequireAuthorization("EditorOrAdmin");
+        group.MapDeleteBlogpost().RequireAuthorization("EditorOrAdmin");
     }
 }

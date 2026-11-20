@@ -14,8 +14,8 @@ public static class ProjectEndpoints
 
         group.MapGetAllProjects();
         group.MapGetProjectById();
-        group.MapPostProject();
-        group.MapPutProject();
-        group.MapDeleteProject();
+        group.MapPostProject().RequireAuthorization("EditorOrAdmin");
+        group.MapPutProject().RequireAuthorization("EditorOrAdmin");
+        group.MapDeleteProject().RequireAuthorization("EditorOrAdmin");
     }
 }
