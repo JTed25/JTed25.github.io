@@ -16,20 +16,38 @@ WPFW Opdracht 3
 -->PortfolioDbContext.cs
 
 -> DTOS
---> CreateProjectDto.cs
---> ProjectDto.cs
---> CreateBlogpostDto.cs
 --> BlogpostDto.cs
+--> CreateBlogpostDto.cs
+--> CreateProjectDto.cs
+--> LoginDto.cs
+--> ProjectDto.cs
+--> RegisterDto.cs
 
 -> Entities
 --> Project.cs
 --> Blogpost.cs
 
 -> Features
+--> Auth
+---> AuthEndpoints.cs
+---> Login.cs
+---> Register.cs
+
 --> Blogposts
 ---> BlogpostEndpoints.cs
+---> DeleteBlogpost.cs
+---> GetAllBlogposts.cs
+---> GetBlogpostById.cs
+---> PostBlogpost.cs
+---> PutBlogpost.cs
+
 --> Projects
+---> DeleteProject.cs
+---> GetAllProjects.cs
+---> GetProjectById.cs
+---> PostProject.cs
 ---> ProjectEndpoints.cs
+---> PutProject.cs
 
 -> Migrations
 
@@ -59,3 +77,39 @@ PS C:\Users\Jeted\OneDrive\WPFW opdracht 1\WPFW Opdracht 3> dotnet run
 
 Het openen van Swagger:
 http://localhost:5016/swagger
+
+Authenticatie en autorisatie:
+Deze applicatie maakt gebruik van ASP.NET Core Identity in combinatie met Entity Framework Core voor gebruikersbeheer, authenticatie en autorisatie.
+
+Registreren:
+Om te registreren moet je via deze request komen:
+POST/api/auth/register
+
+Vul je email en wachtwoord in om te registreren.
+Voorbeeld 
+{
+  email: "gebruikerstest.nl",
+  wachtwoord: "Test123!"
+}
+
+Na een succesvolle registratie wordt de rol Gast automatisch toegewezen.
+
+Inloggen:
+Om in te kunnen loggen moet je hier je gegevens invullen:
+POST/api/auth/login
+
+Vul je email en wachtwoord in om in te loggen.
+Voorbeeld
+{
+  email: "gebruikerstest@nl"
+  wachtwoord: "Test123!"
+}
+
+De API geeft een authenticatiecookie bij een succesvolle login. Deze cookie wordt gebruikt om beveiligde routes te benaderen.
+
+Rollen:
+Er zijn drie rollen die de appllicatie gebruikt:
+Admin: Admins hebben dezelfde rechten als Editor.
+Editor: Editors mogen projecten en blogpost aanmaken, wijzigen en verwijderen.
+Gast: Iedereen is als gast geregistreerd.
+
