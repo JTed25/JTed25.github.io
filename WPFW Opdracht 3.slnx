@@ -1,3 +1,7 @@
 <Solution>
+  <Folder Name="/WPFW Opdracht 3/">
+    <Project Path="WPFW Opdracht 3/WPFW_Opdracht_3.Tests/WPFW_Opdracht_3.Tests.csproj" />
+  </Folder>
   <Project Path="WPFW Opdracht 3/WPFW Opdracht 3.csproj" />
+  <Project Path="WPFW_Opdracht_3.Tests/WPFW_Opdracht_3.Tests.csproj" />
 </Solution>

@@ -88,8 +88,8 @@ POST/api/auth/register
 Vul je email en wachtwoord in om te registreren.
 Voorbeeld 
 {
-  email: "gebruikerstest.nl",
-  wachtwoord: "Test123!"
+  "email": "gebruikerstest.nl",
+  "wachtwoord": "Test123!"
 }
 
 Na een succesvolle registratie wordt de rol Gast automatisch toegewezen.
@@ -101,8 +101,8 @@ POST/api/auth/login
 Vul je email en wachtwoord in om in te loggen.
 Voorbeeld
 {
-  email: "gebruikerstest@nl"
-  wachtwoord: "Test123!"
+  "email": "gebruikerstest@nl"
+  "wachtwoord": "Test123!"
 }
 
 De API geeft een authenticatiecookie bij een succesvolle login. Deze cookie wordt gebruikt om beveiligde routes te benaderen.
@@ -111,5 +111,27 @@ Rollen:
 Er zijn drie rollen die de appllicatie gebruikt:
 Admin: Admins hebben dezelfde rechten als Editor.
 Editor: Editors mogen projecten en blogpost aanmaken, wijzigen en verwijderen.
-Gast: Iedereen is als gast geregistreerd.
+Gast: Iedereen is als gast geregistreerd. 
 
+Handmatig toekennen van rollen:
+De rollen Editor en Admin worden handmatig toegekend in de database.
+In AspNetUserRoles wordt de koppeling opgeslagen.
+In AspNetRoles worden de beschikbare rollen opgeslagen.
+
+Autorisatie:
+Iedereen mag de projecten en blogpost opvragen met GET.
+Alleen gebruikers met de rol Editor of Admin mogen de projecten/blogposts aanmaken (POST), wijzigen (PUT) of verwijderen (DELETE). De policy EditorOrAdmin wordt hiervoor gebruikt.
+
+Gedrag van beveiligde routes:
+Deze HTTP statussen worden gegeven gebaseerd op welke actie je doet en welke rol je hebt.
+Niet ingelogd: 401 Unauthorized
+Als gast ingelogd: 403 Forbidden
+Als Editor/Admin ingelogd:
+200 Ok
+201 Created
+
+Opnieuw inloggen na rolwijziging:
+Wanneer een gebruiker een nieuwe rol wil hebben, moet diegene opnieuw inloggen. Hierdoor wordt de nieuwe rol opgeslagen in een authenticatiecookie.
+
+Beveiliging:
+Er worden geen wachtwoorden, API-sleutels of andere geheime gegevens opgeslagen in de repository.
