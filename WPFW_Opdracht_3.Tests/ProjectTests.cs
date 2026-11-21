@@ -14,12 +14,12 @@ public class ProjectTests : IClassFixture<CustomWebApplicationFactory>
     }
 
     [Fact]
-    public async Task Root_ReturnsOk()
+    public async Task GetProjects_ReturnsOk()
     {
         //Arrange
 
         //Act
-        var response = await _client.GetAsync("/");
+        var response = await _client.GetAsync("/api/projects");
 
         //Assert
         Assert.Equal(HttpStatusCode.OK, response.StatusCode);

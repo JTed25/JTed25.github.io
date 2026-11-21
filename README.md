@@ -142,13 +142,14 @@ Alle tests zijn opgezet volgens het AAA-model (Arrange, Act, Assert).
 
 Geteste onderdelen:
 Projects:
--Root endpoint retourneert 200 OK.
+-Projecten halen retourneert 200 Ok.
 -Project met onbekend Id retourneert 404 Not Found.
 -Project aanmaken zonder login retourneert 401 Unauthorized.
 -Project wijzigen zonder login retourneert 401 Unauthorized.
 -Project verwijderen met onbekend Id retourneert 404 Not Found.
 
 Blogposts:
+-Blogposts halen retourneert 200 Ok.
 -Blogpost met onbekend Id retourneert 404 Not Found.
 -Blogpost aanmaken zonder login retourneert 401 Unauthorized.
 -Blogpost wijzigen zonder login retourneert 401 Unauthorized.

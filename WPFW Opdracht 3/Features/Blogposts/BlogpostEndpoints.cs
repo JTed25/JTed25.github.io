@@ -9,9 +9,10 @@ public static class BlogpostEndpoints
     public static void MapBlogpostEndpoints (this WebApplication app)
     {
         /*CRUD-endpoints voor Blogpost*/
+        app.MapGetAllBlogposts();
+
         var group = app.MapGroup("/api/blogposts");
 
-        group.MapGetAllBlogposts();
         group.MapGetBlogpostById();
         group.MapPostBlogpost().RequireAuthorization("EditorOrAdmin");
         group.MapPutBlogpost().RequireAuthorization("EditorOrAdmin");

@@ -14,6 +14,18 @@ public class BlogpostTests : IClassFixture<CustomWebApplicationFactory>
     }
 
     [Fact]
+    public async Task GetBlogposts_ReturnsOk()
+    {
+        //Arrange
+
+        //Act
+        var response = await _client.GetAsync("/api/blogposts");
+
+        //Assert
+        Assert.Equal(HttpStatusCode.OK, response.StatusCode);
+    }
+
+    [Fact]
     public async Task GetBlogpostById_Returns404()
     {
         //Arrange

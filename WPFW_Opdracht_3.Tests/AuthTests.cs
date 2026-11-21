@@ -14,7 +14,7 @@ public class AuthTests : IClassFixture<CustomWebApplicationFactory>
     }
 
     [Fact]
-    public async Task Login_WithInvalidCredentials_ReturnsUnauthorized()
+    public async Task Login_WithInvalidCredentials_Returns401()
     {
         // Arrange
 
