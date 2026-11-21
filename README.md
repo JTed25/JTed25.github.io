@@ -88,7 +88,7 @@ POST/api/auth/register
 Vul je email en wachtwoord in om te registreren.
 Voorbeeld 
 {
-  "email": "gebruikerstest.nl",
+  "email": "gebruikers@test.nl",
   "wachtwoord": "Test123!"
 }
 
@@ -101,7 +101,7 @@ POST/api/auth/login
 Vul je email en wachtwoord in om in te loggen.
 Voorbeeld
 {
-  "email": "gebruikerstest@nl"
+  "email": "gebruikers@test.nl",
   "wachtwoord": "Test123!"
 }
 
@@ -111,11 +111,11 @@ Rollen:
 Er zijn drie rollen die de appllicatie gebruikt:
 Admin: Admins hebben dezelfde rechten als Editor.
 Editor: Editors mogen projecten en blogpost aanmaken, wijzigen en verwijderen.
-Gast: Iedereen is als gast geregistreerd. 
+Gast: Iedereen is als gast geregistreerd. Ze mogen projecten en blogposts bekijken, maar niet aanmaken, wijzigen of verwijderen.
 
 Handmatig toekennen van rollen:
-De rollen Editor en Admin worden handmatig toegekend in de database.
-In AspNetUserRoles wordt de koppeling opgeslagen.
+De rollen Editor en Admin worden handmatig toegekend in de database (SQL Server).
+In AspNetUserRoles wordt de koppeling tussen gebruikers en rollen opgeslagen.
 In AspNetRoles worden de beschikbare rollen opgeslagen.
 
 Autorisatie:
@@ -135,3 +135,24 @@ Wanneer een gebruiker een nieuwe rol wil hebben, moet diegene opnieuw inloggen. 
 
 Beveiliging:
 Er worden geen wachtwoorden, API-sleutels of andere geheime gegevens opgeslagen in de repository.
+
+xUnit testproject:
+Voor de API heb ik een apart xUnit-testproject aangemaakt.
+Alle tests zijn opgezet volgens het AAA-model (Arrange, Act, Assert).
+
+Geteste onderdelen:
+Projects:
+-Root endpoint retourneert 200 OK.
+-Project met onbekend Id retourneert 404 Not Found.
+-Project aanmaken zonder login retourneert 401 Unauthorized.
+-Project wijzigen zonder login retourneert 401 Unauthorized.
+-Project verwijderen met onbekend Id retourneert 404 Not Found.
+
+Blogposts:
+-Blogpost met onbekend Id retourneert 404 Not Found.
+-Blogpost aanmaken zonder login retourneert 401 Unauthorized.
+-Blogpost wijzigen zonder login retourneert 401 Unauthorized.
+-Blogpost verwijderen met onbekend Id retourneert 404 Not Found.
+
+Authenticatie:
+-Login met ongeldige gegevens retourneert 401 Unauthorized.
