@@ -1,3 +1,6 @@
+USE PortfolioDb;
+GO
+
 SELECT U.Email, R.Name
 FROM AspNetUsers U
 JOIN AspNetUserRoles UR

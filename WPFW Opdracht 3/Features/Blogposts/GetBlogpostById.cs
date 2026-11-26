@@ -12,6 +12,8 @@ public static class GetBlogpostById
         /*GET blogpost op id*/
         group.MapGet("/{id}", async (int id, PortfolioDbContext db) =>
         {
+            Console.WriteLine($"GET BLOGPOST ID: {id}");
+
             var blogpost = await db.Blogposts.FindAsync(id);
             
             if (blogpost == null)
@@ -24,7 +26,8 @@ public static class GetBlogpostById
                     Inhoud = blogpost.Inhoud,
                     Publicatiedatum = blogpost.Publicatiedatum
                 });
-            });
+            })
+            .AllowAnonymous();
         
         return group;
     }

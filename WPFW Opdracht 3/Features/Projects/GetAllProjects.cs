@@ -6,10 +6,10 @@ namespace WPFW_Opdracht_3.Features.Projects;
 
 public static class GetAllProjects
 {
-    public static void MapGetAllProjects(this WebApplication app)
+    public static RouteGroupBuilder MapGetAllProjects(this RouteGroupBuilder group)
     {
         /*GET alle projecten*/
-        app.MapGet("/api/projects", async (PortfolioDbContext db) =>
+        group.MapGet("/", async (PortfolioDbContext db) =>
         {
             var projects = await db.Projects
                 .Select(p => new ProjectDto
@@ -24,6 +24,9 @@ public static class GetAllProjects
                     .ToListAsync();
                     
                 return Results.Ok(projects);
-            });
+            })
+            .AllowAnonymous();
+
+            return group;
     }
 }

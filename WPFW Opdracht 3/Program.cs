@@ -16,6 +16,21 @@ builder.Services
 .AddEntityFrameworkStores<PortfolioDbContext>();
 builder.Services.AddAuthentication();
 
+builder.Services.ConfigureApplicationCookie(options =>
+{
+    options.Events.OnRedirectToLogin = context =>
+    {
+        context.Response.StatusCode = StatusCodes.Status401Unauthorized;
+        return Task.CompletedTask;
+    };
+
+    options.Events.OnRedirectToAccessDenied = context =>
+    {
+        context.Response.StatusCode = StatusCodes.Status403Forbidden;
+        return Task.CompletedTask;
+    };
+});
+
 builder.Services.AddAuthorization(options =>
 {
     options.AddPolicy("EditorOrAdmin", policy =>
@@ -74,3 +89,6 @@ public partial class Program
 {
     
 }
+
+/*Solution: portfolioproject
+api, backend*/

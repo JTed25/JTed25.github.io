@@ -75,7 +75,7 @@ public class ProjectTests : IClassFixture<CustomWebApplicationFactory>
         Assert.Equal(HttpStatusCode.Unauthorized, response.StatusCode);
     }
     [Fact]
-    public async Task DeleteProject_WithUnknownId_Returns404()
+    public async Task DeleteProject_WithUnknownId_Returns401()
     {
         //Arrange
 
@@ -83,6 +83,6 @@ public class ProjectTests : IClassFixture<CustomWebApplicationFactory>
         var response = await _client.DeleteAsync("/api/projects/1");
 
         //Assert
-        Assert.Equal(HttpStatusCode.NotFound, response.StatusCode);
+        Assert.Equal(HttpStatusCode.Unauthorized, response.StatusCode);
     }
 }

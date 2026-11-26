@@ -71,7 +71,7 @@ public class BlogpostTests : IClassFixture<CustomWebApplicationFactory>
         Assert.Equal(HttpStatusCode.Unauthorized, response.StatusCode);
     }
     [Fact]
-    public async Task DeleteBlogpost_WithUnknownId_Returns404()
+    public async Task DeleteBlogpost_WithUnknownId_Returns401()
     {
         //Arrange
 
@@ -79,6 +79,6 @@ public class BlogpostTests : IClassFixture<CustomWebApplicationFactory>
         var response = await _client.DeleteAsync("/api/blogposts/1");
 
         //Assert
-        Assert.Equal(HttpStatusCode.NotFound, response.StatusCode);
+        Assert.Equal(HttpStatusCode.Unauthorized, response.StatusCode);
     }
 }

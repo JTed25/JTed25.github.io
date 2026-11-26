@@ -12,6 +12,8 @@ public static class GetProjectById
         /*GET project op id*/
         group.MapGet("/{id}", async (int id, PortfolioDbContext db) =>
         {
+            Console.WriteLine($"GET PROJECT ID: {id}");
+            
             var project = await db.Projects.FindAsync(id);
             
             if (project == null)
@@ -26,7 +28,8 @@ public static class GetProjectById
                     GitHubUrl = project.GitHubUrl,
                     Datum = project.Datum
                 });
-            });
+            })
+            .AllowAnonymous();
         
         return group;
     }

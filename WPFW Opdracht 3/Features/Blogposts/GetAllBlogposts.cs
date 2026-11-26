@@ -6,10 +6,10 @@ namespace WPFW_Opdracht_3.Features.Blogposts;
 
 public static class GetAllBlogposts
 {
-    public static void MapGetAllBlogposts(this WebApplication app)
+    public static RouteGroupBuilder MapGetAllBlogposts(this RouteGroupBuilder group)
     {
         /*GET alle blogposts*/
-        app.MapGet("/api/blogposts", async (PortfolioDbContext db) =>
+        group.MapGet("/", async (PortfolioDbContext db) =>
         {
             var blogposts = await db.Blogposts
                 .Select(b => new BlogpostDto
@@ -22,6 +22,9 @@ public static class GetAllBlogposts
                     .ToListAsync();
                     
                 return Results.Ok(blogposts);
-            });
+            })
+            .AllowAnonymous();
+
+            return group;
     }
 }
