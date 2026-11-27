@@ -15,8 +15,8 @@
     <PackageReference Include="xunit.runner.visualstudio" Version="3.1.4" />
   </ItemGroup>
 
-<ItemGroup>
-  <ProjectReference Include="..\WPFW Opdracht 3\Backend.csproj" />
-</ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Backend\Backend.csproj" />
+  </ItemGroup>
 
 </Project>
