@@ -1,4 +1,4 @@
 <Solution>
-  <Project Path="WPFW Opdracht 3/Backend.csproj" />
-  <Project Path="WPFW_Opdracht_3.Tests/Backend.Tests.csproj" />
+  <Project Path="Backend/Backend.csproj" />
+  <Project Path="Backend.Tests/Backend.Tests.csproj" />
 </Solution>
