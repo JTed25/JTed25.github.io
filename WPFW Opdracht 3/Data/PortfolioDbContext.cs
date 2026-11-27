@@ -1,8 +1,8 @@
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
-using WPFW_Opdracht_3.Entities;
+using Backend.Entities;
 
-namespace WPFW_Opdracht_3.Data;
+namespace Backend.Data;
 
 public class PortfolioDbContext : IdentityDbContext
 {

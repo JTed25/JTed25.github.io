@@ -1,4 +1,4 @@
-namespace WPFW_Opdracht_3.DTOs;
+namespace Backend.DTOs;
 
 public class RegisterDto
 {

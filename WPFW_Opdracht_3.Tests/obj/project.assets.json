@@ -1812,7 +1812,7 @@
           "build/net8.0/xunit.runner.visualstudio.props": {}
         }
       },
-      "WPFW Opdracht 3/1.0.0": {
+      "Backend/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v10.0",
         "dependencies": {
@@ -1823,10 +1823,10 @@
           "System.Security.Cryptography.Pkcs": "10.0.14"
         },
         "compile": {
-          "bin/placeholder/WPFW Opdracht 3.dll": {}
+          "bin/placeholder/Backend.dll": {}
         },
         "runtime": {
-          "bin/placeholder/WPFW Opdracht 3.dll": {}
+          "bin/placeholder/Backend.dll": {}
         },
         "frameworkReferences": [
           "Microsoft.AspNetCore.App"
@@ -4485,17 +4485,17 @@
         "xunit.runner.visualstudio.nuspec"
       ]
     },
-    "WPFW Opdracht 3/1.0.0": {
+    "Backend/1.0.0": {
       "type": "project",
-      "path": "../WPFW Opdracht 3/WPFW Opdracht 3.csproj",
-      "msbuildProject": "../WPFW Opdracht 3/WPFW Opdracht 3.csproj"
+      "path": "../WPFW Opdracht 3/Backend.csproj",
+      "msbuildProject": "../WPFW Opdracht 3/Backend.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net10.0": [
+      "Backend >= 1.0.0",
       "Microsoft.AspNetCore.Mvc.Testing >= 10.0.14",
       "Microsoft.NET.Test.Sdk >= 18.0.0",
-      "WPFW Opdracht 3 >= 1.0.0",
       "coverlet.collector >= 6.0.4",
       "xunit >= 2.9.3",
       "xunit.runner.visualstudio >= 3.1.4"
@@ -4507,9 +4507,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Jeted\\OneDrive\\WPFW opdracht 1\\WPFW_Opdracht_3.Tests\\WPFW_Opdracht_3.Tests.csproj",
-      "projectName": "WPFW_Opdracht_3.Tests",
-      "projectPath": "C:\\Users\\Jeted\\OneDrive\\WPFW opdracht 1\\WPFW_Opdracht_3.Tests\\WPFW_Opdracht_3.Tests.csproj",
+      "projectUniqueName": "C:\\Users\\Jeted\\OneDrive\\WPFW opdracht 1\\WPFW_Opdracht_3.Tests\\Backend.Tests.csproj",
+      "projectName": "Backend.Tests",
+      "projectPath": "C:\\Users\\Jeted\\OneDrive\\WPFW opdracht 1\\WPFW_Opdracht_3.Tests\\Backend.Tests.csproj",
       "packagesPath": "C:\\Users\\Jeted\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\Jeted\\OneDrive\\WPFW opdracht 1\\WPFW_Opdracht_3.Tests\\obj\\",
       "projectStyle": "PackageReference",
@@ -4527,8 +4527,8 @@
           "framework": "net10.0",
           "targetAlias": "net10.0",
           "projectReferences": {
-            "C:\\Users\\Jeted\\OneDrive\\WPFW opdracht 1\\WPFW Opdracht 3\\WPFW Opdracht 3.csproj": {
-              "projectPath": "C:\\Users\\Jeted\\OneDrive\\WPFW opdracht 1\\WPFW Opdracht 3\\WPFW Opdracht 3.csproj"
+            "C:\\Users\\Jeted\\OneDrive\\WPFW opdracht 1\\WPFW Opdracht 3\\Backend.csproj": {
+              "projectPath": "C:\\Users\\Jeted\\OneDrive\\WPFW opdracht 1\\WPFW Opdracht 3\\Backend.csproj"
             }
           }
         }

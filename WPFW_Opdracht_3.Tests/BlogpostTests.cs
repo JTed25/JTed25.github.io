@@ -1,14 +1,15 @@
 using System.Net;
 using System.Net.Http.Json;
+using Microsoft.AspNetCore.Mvc.Testing;
 using Xunit;
 
-namespace WPFW_Opdracht_3.Tests;
+namespace Backend.Tests;
 
-public class BlogpostTests : IClassFixture<CustomWebApplicationFactory>
+public class BlogpostTests : IClassFixture<WebApplicationFactory<Program>>
 {
     private readonly HttpClient _client;
 
-    public BlogpostTests(CustomWebApplicationFactory factory)
+    public BlogpostTests(WebApplicationFactory<Program> factory)
     {
         _client = factory.CreateClient();
     }

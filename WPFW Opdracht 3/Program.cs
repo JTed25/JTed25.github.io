@@ -1,11 +1,11 @@
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
-using WPFW_Opdracht_3.Data;
-using WPFW_Opdracht_3.Entities;
-using WPFW_Opdracht_3.DTOs;
-using WPFW_Opdracht_3.Features.Blogposts;
-using WPFW_Opdracht_3.Features.Projects;
-using WPFW_Opdracht_3.Features.Auth;
+using Backend.Data;
+using Backend.Entities;
+using Backend.DTOs;
+using Backend.Features.Blogposts;
+using Backend.Features.Projects;
+using Backend.Features.Auth;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -16,6 +16,8 @@ builder.Services
 .AddEntityFrameworkStores<PortfolioDbContext>();
 builder.Services.AddAuthentication();
 
+//Authenticatiecookie configureren
+//Is de status 401 of 403?
 builder.Services.ConfigureApplicationCookie(options =>
 {
     options.Events.OnRedirectToLogin = context =>
@@ -55,7 +57,7 @@ app.UseAuthentication();
 app.UseAuthorization();
 
 /*Test CRUD-endpoint*/
-app.MapGet("/", () => "WPFW Opdracht 3");
+app.MapGet("/", () => "Backend");
 
 app.MapProjectEndpoints();
 app.MapBlogpostEndpoints();

@@ -1,11 +1,11 @@
-@WPFW_Opdracht_3_HostAddress = http://localhost:5016
+@Backend_HostAddress = http://localhost:5016
 
-GET {{WPFW_Opdracht_3_HostAddress}}/api/projects
+GET {{Backend_HostAddress}}/api/projects
 Accept: application/json
 
 ###
 
-GET {{WPFW_Opdracht_3_HostAddress}}/api/blogposts
+GET {{Backend_HostAddress}}/api/blogposts
 Accept: application/json
 
 ###

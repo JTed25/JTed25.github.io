@@ -1,14 +1,16 @@
 using System.Net;
 using System.Net.Http.Json;
+using Microsoft.AspNetCore.Builder;
+using Microsoft.AspNetCore.Mvc.Testing;
 using Xunit;
 
-namespace WPFW_Opdracht_3.Tests;
+namespace Backend.Tests;
 
-public class AuthTests : IClassFixture<CustomWebApplicationFactory>
+public class AuthTests : IClassFixture<WebApplicationFactory<Program>>
 {
     private readonly HttpClient _client;
 
-    public AuthTests(CustomWebApplicationFactory factory)
+    public AuthTests(WebApplicationFactory<Program> factory)
     {
         _client = factory.CreateClient();
     }

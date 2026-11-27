@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "SI/WSHXv79U=",
+  "dgSpecHash": "SoaTaZKFtdI=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Jeted\\OneDrive\\WPFW opdracht 1\\WPFW_Opdracht_3.Tests\\WPFW_Opdracht_3.Tests.csproj",
+  "projectFilePath": "C:\\Users\\Jeted\\OneDrive\\WPFW opdracht 1\\WPFW_Opdracht_3.Tests\\Backend.Tests.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Jeted\\.nuget\\packages\\azure.core\\1.50.0\\azure.core.1.50.0.nupkg.sha512",
     "C:\\Users\\Jeted\\.nuget\\packages\\azure.identity\\1.17.1\\azure.identity.1.17.1.nupkg.sha512",

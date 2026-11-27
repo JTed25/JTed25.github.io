@@ -1,9 +1,9 @@
 using Microsoft.EntityFrameworkCore;
-using WPFW_Opdracht_3.Data;
-using WPFW_Opdracht_3.Entities;
-using WPFW_Opdracht_3.DTOs;
+using Backend.Data;
+using Backend.Entities;
+using Backend.DTOs;
 
-namespace WPFW_Opdracht_3.Features.Blogposts;
+namespace Backend.Features.Blogposts;
 public static class BlogpostEndpoints
 {
     public static void MapBlogpostEndpoints (this WebApplication app)

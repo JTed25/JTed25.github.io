@@ -3673,9 +3673,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Jeted\\OneDrive\\WPFW opdracht 1\\WPFW Opdracht 3\\WPFW Opdracht 3.csproj",
-      "projectName": "WPFW Opdracht 3",
-      "projectPath": "C:\\Users\\Jeted\\OneDrive\\WPFW opdracht 1\\WPFW Opdracht 3\\WPFW Opdracht 3.csproj",
+      "projectUniqueName": "C:\\Users\\Jeted\\OneDrive\\WPFW opdracht 1\\WPFW Opdracht 3\\Backend.csproj",
+      "projectName": "Backend",
+      "projectPath": "C:\\Users\\Jeted\\OneDrive\\WPFW opdracht 1\\WPFW Opdracht 3\\Backend.csproj",
       "packagesPath": "C:\\Users\\Jeted\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\Jeted\\OneDrive\\WPFW opdracht 1\\WPFW Opdracht 3\\obj\\",
       "projectStyle": "PackageReference",

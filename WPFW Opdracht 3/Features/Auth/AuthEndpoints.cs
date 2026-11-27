@@ -1,4 +1,4 @@
-namespace WPFW_Opdracht_3.Features.Auth;
+namespace Backend.Features.Auth;
 
 public static class AuthEndpoints
 {

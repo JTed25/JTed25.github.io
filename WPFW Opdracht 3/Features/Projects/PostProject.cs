@@ -1,9 +1,9 @@
 using Microsoft.EntityFrameworkCore;
-using WPFW_Opdracht_3.Data;
-using WPFW_Opdracht_3.DTOs;
-using WPFW_Opdracht_3.Entities;
+using Backend.Data;
+using Backend.DTOs;
+using Backend.Entities;
 
-namespace WPFW_Opdracht_3.Features.Projects;
+namespace Backend.Features.Projects;
 
 public static class PostProject
 {

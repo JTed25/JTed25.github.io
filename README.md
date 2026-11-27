@@ -11,7 +11,7 @@ SQL Server Express (SQLEXPRESS)
 Swagger (Swashbuckle.AspNetCore)
 
 Codestructuur:
-WPFW Opdracht 3 
+Backend 
 -> Data
 -->PortfolioDbContext.cs
 
@@ -65,15 +65,15 @@ Het configureren van de SQL Server wordt in appsettings.json verwerkt met de cod
 
 Database aanmaken:
 Het maken van de migratie voer je deze code uit in de terminal:
-PS C:\Users\Jeted\OneDrive\WPFW opdracht 1\WPFW Opdracht 3> dotnet ef migrations add InitialCreate 
+PS C:\Users\Jeted\OneDrive\WPFW opdracht 1\Backend> dotnet ef migrations add InitialCreate 
 
 Voor het aanmaken/updaten van de database voer je dit in de terminal:
-PS C:\Users\Jeted\OneDrive\WPFW opdracht 1\WPFW Opdracht 3> dotnet ef database update
+PS C:\Users\Jeted\OneDrive\WPFW opdracht 1\Backend> dotnet ef database update
 
 Applicatie starten:
 Je start de applicatie door dit in te voeren in de terminal:
-PS C:\Users\Jeted\OneDrive\WPFW opdracht 1\ cd "WPFW Opdracht 3"
-PS C:\Users\Jeted\OneDrive\WPFW opdracht 1\WPFW Opdracht 3> dotnet run
+PS C:\Users\Jeted\OneDrive\WPFW opdracht 1\ cd "Backend"
+PS C:\Users\Jeted\OneDrive\WPFW opdracht 1\Backend> dotnet run
 
 Het openen van Swagger:
 http://localhost:5016/swagger

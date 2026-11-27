@@ -1,8 +1,8 @@
 using Microsoft.EntityFrameworkCore;
-using WPFW_Opdracht_3.Data;
-using WPFW_Opdracht_3.DTOs;
+using Backend.Data;
+using Backend.DTOs;
 
-namespace WPFW_Opdracht_3.Features.Projects;
+namespace Backend.Features.Projects;
 
 public static class GetProjectById
 {

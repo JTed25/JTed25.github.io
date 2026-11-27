@@ -1,4 +1,4 @@
-namespace WPFW_Opdracht_3.Entities;
+namespace Backend.Entities;
 
 public class Blogpost
 {
